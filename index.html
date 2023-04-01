@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Sorting Algorithms</title>
+    </head>
+    <body style="background-color: rgb(226, 202, 225);">
+        <div align="center">
+            <canvas id="canvas" style="border: 1px solid #333; background-color: black;"></canvas>
+        </div>
+        <br>
+        <div height="50px">
+            <form>
+                <p>
+                    <input type="button" value="reset" onclick="resetFunc()">
+                    <input type="button" value="New Array" onclick="init()">
+                    <input type="range" min="30" max="300" value="300" id="range" oninput="changeArrSize()">
+                    <span id="rangeValue">300</span>
+                    <select id="selectSort">
+                        <option value="1">Bubble Sort</option>
+                        <option value="2">Quick Sort</option>
+                        <option value="3">Heap Sort</option>
+                        <option value="4">Insertion Sort</option>
+                        <option value="5">Merge Sort</option>
+                        <option value="6">Selection Sort</option>
+                        <option value="7">Shell Sort</option>
+                    </select>
+                    <input type="button" value="Sort" onclick="Sort()">
+                </p>
+            </form>
+        </div>
+    </body>
+    <script src="code.js"></script>
+</html>
